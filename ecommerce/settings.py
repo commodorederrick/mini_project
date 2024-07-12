@@ -93,17 +93,17 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ecommerce_db',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
     }
 }
-DATABASES={
-    'default':dj_database_url.parse("postgres://jiji_ecomerce_user:h281dP6uk7vmhlMr0g1u41zpYsSOLQxD@dpg-cpkaojkf7o1s73clumeg-a/jiji_ecomerce")
-}
+# DATABASES={
+#     'default':dj_database_url.parse("postgres://jiji_ecomerce_user:h281dP6uk7vmhlMr0g1u41zpYsSOLQxD@dpg-cpkaojkf7o1s73clumeg-a/jiji_ecomerce")
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
